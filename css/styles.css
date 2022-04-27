@@ -178,6 +178,7 @@ img {
 /* main  */
 
 .hero {
+  max-width: 1600px;
   /* background-color: #2f303a; */
   padding-top: 200px;
   padding-bottom: 200px;
@@ -188,6 +189,7 @@ img {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -415,9 +417,9 @@ img {
   padding-bottom: 60px;
 }
 
-/* .footer .container {
-  
-} */
+.footer .container {
+  display: flex;
+}
 
 .footer-logo {
   text-decoration: none;
@@ -455,6 +457,49 @@ img {
 
 .address-link + .address-link {
   margin-top: 6px;
+}
+
+.footer-soc {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-soc-title {
+  color: var(--footer-color);
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.13;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: left;
+}
+
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--icon-accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* portfolio  */
@@ -510,6 +555,12 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-content {
